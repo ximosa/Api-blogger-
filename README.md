@@ -1,6 +1,6 @@
 Hi there!
 
-I'm a software developer passionate about building web applications.  Currently, I'm working on a personal project using React and Node.js to  (brief description of your project). 
+I'm a software developer passionate about building web applications.  Currently, I'm working on a personal project using JavaScript other web developing languages to develop a browser-based operating system. 
 
 I'm always eager to learn new things and am currently diving deep into AGI.
 
