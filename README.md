@@ -10,11 +10,11 @@ I'm always eager to learn new things and am currently diving deep into AGI.
 * Version Control: Git
 
 
-** How to reach me:**
+**How to reach me:**
 
 * Email: [My email address](mailto:nadeeshafernando2020@gmail.com)
 * Twitter: [My Twitter account](https://twitter.com/Nadeesh78909401)
 
-** Pronouns:** (he/him)
+**Pronouns:** (he/him)
 
 **⚡ Fun fact:** (I'm a lazy guy!)
