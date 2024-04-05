@@ -1,16 +1,30 @@
-### Hi there 👋
+![Banner Image](path/to/your/image.png)  Hi there 
 
-<!--
-**astrogroupsl-dev/astrogroupsl-dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a software developer passionate about building web applications.  Currently, I'm working on a personal project using React and Node.js to  (brief description of your project). 
 
-Here are some ideas to get you started:
+I'm always eager to learn new things and am currently diving deep into  (mention a specific technology you're learning).
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Looking to:**
+
+* Collaborate on open-source projects related to  (mention your area of interest).
+* Contribute to projects that utilize  (mention your preferred technologies).
+
+**Skills:**
+
+* Programming Languages:  (List your languages)
+* Frameworks:  (List your frameworks)
+* Version Control: Git
+
+**You can find more of my work on:**
+
+* My Website: [Link to your website] (Optional)
+* GitHub: [Link to my profile](https://github.com/astrogroupsl-dev)
+
+** How to reach me:**
+
+* Email: [My email address](nadeeshafernando2020@gmail.com)
+* Twitter: [My Twitter account](https://twitter.com/Nadeesh78909401)
+
+** Pronouns:** (he/him)
+
+**⚡ Fun fact:** (I'm a lazy guy!)
