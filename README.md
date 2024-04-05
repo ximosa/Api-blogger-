@@ -1,6 +1,6 @@
 Hi there!
 
-I'm a software developer passionate about building web applications.  Currently, I'm working on a personal project using JavaScript other web developing languages to develop a browser-based operating system. 
+I'm a student currently following a Software Engineer BEng (Hons) degree and passionate about building web applications.  Currently, I'm working on a personal project using JavaScript other web developing languages to develop a browser-based operating system. 
 
 I'm always eager to learn new things and am currently diving deep into AGI.
 
