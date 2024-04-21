@@ -10,7 +10,11 @@ I'm a Frontend Developer from Sri Lanka. I'm passionate about frontend developme
 
 ## 🔗 Connect with me
 
-<img src='https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2FNadeesh78909401' alt='astrogroupsl-dev'>
+<a href="https://www.facebook.com/profile.php?id=100072737604608&mibextid=ZbWKwL" target="_blank"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?&style=flat-square&logo=facebook&logoColor=white" alt="Facebook"></a>
+<a href="https://www.instagram.com/nadeesha_igneshius/" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
+<a href="https://www.linkedin.com/in/nadeesha-fernando-7980141bb" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://open.spotify.com/user/31daycwk5datuv5g7nyr4lo3fmtu?si=2dba23d38b8e4711" target="_blank"><img src="https://img.shields.io/badge/Spotify-%231ED760.svg?&style=flat-square&logo=spotify&logoColor=white" alt="Spotify"></a>
+<a href="https://twitter.com/Nadeesh78909401" target="_blank"><img src='https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2FNadeesh78909401' alt='Twitter'></a>
 
 ## 📊 GitHub Stats
 
@@ -20,13 +24,8 @@ I'm a Frontend Developer from Sri Lanka. I'm passionate about frontend developme
 
 ## 📈 Contribution Graph
 
-![Contribution](https://activity-graph.herokuapp.com/graph?username=astrogroupsl-dev&theme=react-dark&hide_border=true&area=true)
+![Contribution](https://github-readme-activity-graph.vercel.app/graph?username=astrogroupsl-dev&bg_color=fffff0&color=708090&line=24292e&point=24292e&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ## 📚 GitHub All Stats
 
 <img src='https://myreadme.vercel.app/api/embed/astrogroupsl-dev?panels=userstatistics,toprepositories,toplanguages,commitgraph' alt='astrogroupsl-dev'>
-
-## 🎮 Fun Zone
-
-![Waka Readme](https://github.com/astrogroupsl-dev/astrogroupsl-dev/blob/main/images/stat.svg)
-![YouTube Card](https://github-readme-youtube-stats.herokuapp.com/youtube?user=astrogroupsl-dev)
