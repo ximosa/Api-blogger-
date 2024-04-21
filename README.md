@@ -1,6 +1,6 @@
 # Hi there 👋, I'm Nadeesha
 
-I'm a University student who willing to get a BEng Software Engineering Degree from Sri Lanka. I'm passionate about frontend development and have experience in CSS and HTML.
+I'm a University student who willing to get a BEng Software Engineering Degree from Sri Lanka. I'm passionate about frontend development.
 
 !Profile views
 
