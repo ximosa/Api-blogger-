@@ -24,7 +24,7 @@ I'm a Frontend Developer from Sri Lanka. I'm passionate about frontend developme
 
 ## 📈 Contribution Graph
 
-![Contribution](https://github-readme-activity-graph.vercel.app/graph?username=astrogroupsl-dev&bg_color=fffff0&color=708090&line=24292e&point=24292e&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+![Contribution](https://github-readme-activity-graph.vercel.app/graph?username=astrogroupsl-dev&bg_color=fffff0&color=708090&line=24292e&point=24292e&area=true&hide_border=true)
 
 ## 📚 GitHub All Stats
 
