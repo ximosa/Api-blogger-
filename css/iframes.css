@@ -1,0 +1,19 @@
+.navbar-iframe,
+.footer-iframe {
+    width: 100%;
+    border: none;
+    display: block;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-iframe {
+    box-shadow: 0px 0px 10px 5px;
+    position: fixed;
+    top: 0;
+}
+
+.footer-iframe {
+    box-shadow: 0px 0px 10px 5px;
+    bottom: 0;
+}

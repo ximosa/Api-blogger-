@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://yts.mx/assets/images/website/favicon.ico">
+    <title>Newly Released Movies</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000;
+        }
+
+        .heading {
+	    color: #fff;
+	    text-align: center;
+        }
+
+        /* Styling for the container where movies will be displayed */
+        #movie_container {
+	    text-align: center;
+            display: grid; /* Using CSS grid for layout */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum width of 300px */
+            gap: 20px; /* Spacing between movie elements */
+            padding: 20px; /* Padding around the container */
+        }
+        
+        /* Styling for individual movie elements */
+        .movie {
+            border: 1px solid #ccc; /* Border around each movie */
+            border-radius: 5px; /* Rounded corners */
+            padding: 15px; /* Padding inside each movie */
+            color: #eee;
+            background-color: #111; /* Background color */
+            transition: ease-in-out 150ms;
+            height: auto;
+            width: 75%;
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        
+        .movie:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Styling for movie title */
+        .movie h2 {
+            margin: 0; /* Resetting margin */
+            font-size: 18px; /* Font size for the title */
+            margin-bottom: 10px; /* Spacing below the title */
+        }
+        
+        /* Styling for movie genre and year */
+        .movie p {
+            margin: 0; /* Resetting margin */
+            font-size: 14px; /* Font size for genre and year */
+            color: #666; /* Text color */
+        }
+        
+        .movie img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Download YTS YIFY movies: HD smallest size</h1>
+    <div id="movie_container"></div>
+
+    <script>
+        // Function to fetch new released movies from the YTS API
+        async function fetchNewReleasedMovies() {
+            try {
+                const response = await fetch('https://yts.mx/api/v2/list_movies.json?sort_by=year&order_by=desc&limit=100');
+                const data = await response.json();
+
+                if (data.status === 'ok') {
+                    return data.data.movies;
+                } else {
+                    console.error('Error fetching movies:', data.status_message);
+                    return [];
+                }
+            } catch (error) {
+                console.error('Error fetching movies:', error);
+                return [];
+            }
+        }
+
+	// Function to handle movie click
+	function handleMovieClick(movie) {
+	    // Redirect to the download page for the movie
+	    // For demonstration purposes, let's assume the user wants to download the 720p quality torrent
+	    const torrent720p = movie.torrents.find(torrent => torrent.quality === '720p');
+	    if (torrent720p) {
+	        window.location.href = torrent720p.url;
+	    } else {
+	        console.error('720p quality torrent not found for the movie:', movie.title);
+	        // Optionally, display an error message to the user
+	        alert('720p quality torrent not available for this movie.');
+	    }
+	}
+
+        // Function to display movies on the webpage
+        async function displayMovies() {
+            const movies = await fetchNewReleasedMovies();
+            const movieContainer = document.getElementById('movie_container');
+
+            movieContainer.innerHTML = '';
+
+            movies.forEach(movie => {
+                const movieElement = document.createElement('div');
+                movieElement.classList.add('movie');
+
+                // Create an image element for the thumbnail
+                const thumbnailElement = document.createElement('img');
+                thumbnailElement.src = movie.medium_cover_image; // Assuming the API provides a medium-sized cover image
+                thumbnailElement.alt = movie.title; // Provide alt text for accessibility
+
+                // Create elements for title, genre, and year
+                const titleElement = document.createElement('h2');
+                titleElement.textContent = movie.title;
+
+                const genreElement = document.createElement('p');
+                genreElement.textContent = 'Genre: ' + movie.genres.join(', ');
+
+                const yearElement = document.createElement('p');
+                yearElement.textContent = 'Year: ' + movie.year;
+
+                // Add event listener to movie element
+                movieElement.addEventListener('click', () => handleMovieClick(movie));
+
+                // Append elements to the movie container
+                movieElement.appendChild(thumbnailElement);
+                movieElement.appendChild(titleElement);
+                movieElement.appendChild(genreElement);
+                movieElement.appendChild(yearElement);
+                movieContainer.appendChild(movieElement);
+            });
+        }
+
+        // Call the displayMovies function when the page loads
+        window.onload = displayMovies;
+    </script>
+</body>
+</html>

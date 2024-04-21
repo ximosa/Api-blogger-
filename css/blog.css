@@ -1,0 +1,45 @@
+#loading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center
+}
+
+.postDiv {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #00000055;
+    backdrop-filter: blur(10px);
+    border: solid 1px #cccccc44;
+    box-shadow: 0px 0px 5px 2px #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.postTitle {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.postTitle:hover {
+    text-decoration: underline;
+}
+
+.postAuthor,
+.postDate {
+    line-height: 0px;
+    font-style: italic;
+}
+
+.postContent {
+    font-weight: lighter;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.post img {
+    border-radius: 5px;
+}
