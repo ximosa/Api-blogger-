@@ -36,3 +36,14 @@ main {
 #github-usr-inf img {
     border-radius: 10px;
 }
+
+.social {
+    display: flexbox;
+    text-align: center;
+}
+
+.social img {
+    margin: 10px;
+    height: 30px;
+    width: 100px;
+}
