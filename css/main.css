@@ -37,12 +37,11 @@ main {
     border-radius: 10px;
 }
 
-.social {
-    display: flexbox;
+.github-usr-social {
     text-align: center;
 }
 
-.social img {
+.github-usr-social img {
     margin: 10px;
     height: 30px;
     width: 100px;
