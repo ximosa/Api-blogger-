@@ -1,12 +1,6 @@
 document.oncontextmenu = new Function("return false")
 document.onselectstart = new Function("return false")
 
-Object.defineProperty(console, '_commandLineAPI', {
-    get: function() {
-        throw new Error('Developer tools are disabled');
-    }
-});
-
 const BLOGGER_ID = '3419676097219198226';
 const API_KEY = 'AIzaSyDWw08ynfeCj-VrWbyWhR6TDcZ7tdH_Yiw';
 const POSTS_API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOGGER_ID}/posts?key=${API_KEY}`;
