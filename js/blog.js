@@ -9,41 +9,34 @@ Object.defineProperty(console, '_commandLineAPI', {
 
 const BLOGGER_ID = '3419676097219198226';
 const API_KEY = 'AIzaSyDWw08ynfeCj-VrWbyWhR6TDcZ7tdH_Yiw';
-const API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOGGER_ID}/posts?key=${API_KEY}`;
+const POSTS_API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOGGER_ID}/posts?key=${API_KEY}`;
 
-fetch(API_URL).then(response => response.json()).then(data => {
-    // Get the posts container
+fetch(POSTS_API_URL).then(response => response.json()).then(data => {
     var postsContainer = document.getElementById('posts-container');
     var loading = document.getElementById('loading');
 
-    // Loop through each post
     data.items.forEach(post => {
         loading.style.display = 'none';
 
-        // Create a div for the post
         var postDiv = document.createElement('div');
         postDiv.className = 'postDiv';
 
-        // Create a title for the post
         var postTitle = document.createElement('a');
         postTitle.innerHTML = post.title;
         postTitle.href = post.url;
         postTitle.className = 'postTitle';
         postDiv.appendChild(postTitle);
 
-        // Create author for the post
         var postAuthor = document.createElement('h6');
         postAuthor.innerHTML = 'Author: ' + post.author.displayName;
         postAuthor.className = 'postAuthor';
         postDiv.appendChild(postAuthor);
 
-        // Create published date for the post
         var postDate = document.createElement('h6');
         postDate.innerHTML = 'Published: ' + new Date(post.published).toDateString();
         postDate.className = 'postDate';
         postDiv.appendChild(postDate);
 
-        // Create content for the post
         var postContent = document.createElement('p');
         var contentElement = document.createElement('div');
         contentElement.innerHTML = post.content;
@@ -51,8 +44,26 @@ fetch(API_URL).then(response => response.json()).then(data => {
         postContent.className = 'postContent';
         postDiv.appendChild(postContent);
 
-        // Append the post to the posts container
+        const COMMENTS_API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOGGER_ID}/posts/${post.id}/comments?key=${API_KEY}`;
+        fetch(COMMENTS_API_URL).then(response => response.json()).then(commentsData => {
+            commentsData.items.forEach(comment => {
+                var commentDiv = document.createElement('div');
+                commentDiv.className = 'commentDiv';
+
+                var commentAuthor = document.createElement('h6');
+                commentAuthor.innerHTML = 'Comment by: ' + comment.author.displayName;
+                commentAuthor.className = 'commentAuthor';
+                commentDiv.appendChild(commentAuthor);
+
+                var commentContent = document.createElement('p');
+                commentContent.innerHTML = comment.content;
+                commentContent.className = 'commentContent';
+                commentDiv.appendChild(commentContent);
+
+                postDiv.appendChild(commentDiv);
+            });
+        }).catch(error => console.error('Error:', error));
+
         postsContainer.appendChild(postDiv);
     });
-})
-.catch(error => console.error('Error:', error));
+}).catch(error => console.error('Error:', error));
