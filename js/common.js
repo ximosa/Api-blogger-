@@ -1,22 +1,23 @@
 document.oncontextmenu = new Function("return false")
 document.onselectstart = new Function("return false")
 
-function deployContent(contentPath, target) {
+function deployContent(src_path, target) {
+  var main_iframe = parent.document.getElementById('main-iframe');
     switch(target) {
       case '_main-iframe':
-        parent.document.getElementById('main-iframe').src = contentPath;
+        main_iframe.src = src_path;
         break;
       case '_blank':
-        window.open(contentPath, target);
+        window.open(src_path, target);
         break;
       case '_parent':
-        parent.location.href = contentPath;
+        parent.location.href = src_path;
         break;
       case '_self':
-        window.location.href = contentPath;
+        window.location.href = src_path;
         break;
       case '_top':
-        top.location.href = contentPath;
+        top.location.href = src_path;
         break;
       default:
         console.log('Invalid target specified.');
