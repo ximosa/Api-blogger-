@@ -38,6 +38,7 @@ fetch(POSTS_API_URL).then(response => response.json()).then(data => {
         const COMMENTS_API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOGGER_ID}/posts/${post.id}/comments?key=${API_KEY}`;
         fetch(COMMENTS_API_URL).then(response => response.json()).then(commentsData => {
             commentsData.items.forEach(comment => {
+
                 var commentDiv = document.createElement('div');
                 commentDiv.className = 'commentDiv';
 
@@ -53,6 +54,11 @@ fetch(POSTS_API_URL).then(response => response.json()).then(data => {
 
                 postDiv.appendChild(commentDiv);
             });
+            var section_divider = document.createElement('hr');
+            var comment_section = document.createElement('h3');
+            comment_section.innerText = 'Comments';
+            postContent.appendChild(section_divider);
+            postContent.appendChild(comment_section);
         }).catch(error => console.error('Error:', error));
 
         postsContainer.appendChild(postDiv);
