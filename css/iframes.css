@@ -1,5 +1,5 @@
-.navbar-iframe,
-.content-iframe,
+.header-iframe,
+.main-iframe,
 .footer-iframe {
     width: 100%;
     border: none;
@@ -8,15 +8,14 @@
     z-index: 1000;
 }
 
-.navbar-iframe {
+.header-iframe {
     box-shadow: 0px 0px 10px 5px;
     position: fixed;
     top: 0;
 }
 
-.content-iframe {
-    /* There should be styles related to the main content container.. */
-    /* 04/24/2024 */
+.main-iframe {
+    height: 100vh; /* or any other percentage value */
 }
 
 .footer-iframe {
