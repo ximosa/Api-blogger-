@@ -1,6 +1,8 @@
+//Limit user experience
 document.oncontextmenu = new Function("return false")
 document.onselectstart = new Function("return false")
 
+//Navigation function
 function deployContent(src_path, target) {
   var main_iframe = parent.document.getElementById('main-iframe');
   var loading_bar = document.getElementById('loading-bar');
@@ -30,4 +32,16 @@ function deployContent(src_path, target) {
     default:
       console.log('Invalid target specified.');
   }
+}
+
+//Alerting function
+function showAlert(title, message) {
+  const alertBox = document.createElement('div');
+  alertBox.className = 'custom-alert';
+  alertBox.innerHTML = `
+    <h2>${title}</h2>
+    <h4>${message}</h4>
+    <button onclick="document.body.removeChild(this.parentElement)">OK</button>
+  `;
+  document.body.appendChild(alertBox);
 }

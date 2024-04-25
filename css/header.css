@@ -57,5 +57,5 @@ header nav a:hover {
     height: 4px;
     background: #40f080cc;
     z-index: 9999;
-    transition: width 1s;
+    transition: width 1s ease-in-out;
 }
