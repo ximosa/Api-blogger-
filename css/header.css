@@ -48,3 +48,14 @@ header nav a:hover {
     color: #ffffff88;
     text-decoration: none;
 }
+
+#loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #40f080cc;
+    z-index: 9999;
+    transition: width 1s;
+}
