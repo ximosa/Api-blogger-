@@ -1,5 +1,5 @@
 const BLOGGER_ID = '3419676097219198226';
-// const API_KEY = 'AIzaSyDWw08ynfeCj-VrWbyWhR6TDcZ7tdH_Yiw';
+const API_KEY = 'AIzaSyDWw08ynfeCj-VrWbyWhR6TDcZ7tdH_Yiw';
 const POSTS_API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOGGER_ID}/posts?key=${API_KEY}`;
 
 fetch(POSTS_API_URL).then(response => response.json()).then(data => {
