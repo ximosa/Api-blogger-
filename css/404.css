@@ -27,7 +27,7 @@ a:hover {
 }
 
 button {
-    background-color: #db3434;
+    background-color: #333333;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -41,5 +41,5 @@ button {
 }
 
 button:hover {
-    background-color: #e98585;
+    background-color: #928e8a;
 }

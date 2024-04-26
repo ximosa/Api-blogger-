@@ -3,19 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="40; url=./">
+    <!-- <meta http-equiv="refresh" content="40; url=./"> -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/404.css">
     <link rel="stylesheet" href="./css/common.css">
     <title>Oops! it's 404</title>
 </head>
 <body>
+    <h1>👽 Oops! This is awkward... </h1>
     <div class="container" id="typewriter">
-        <h1>👽 Oops! This is awkward... </h1>
         <h3>It seems like you've stumbled into the uncharted corners of the universe where this page is supposed to exist, but doesn't. Maybe it got sucked into a black hole, or perhaps aliens have abducted it. Who knows?</h3>
         <h3>While our space team is out there searching for this missing page, why not teleport back to our <a href="./">Home Base</a>?</h3>
         <h3>And remember, in space, no one can hear you scream... unless you forgot to mute your microphone during a video call! 🚀</h3>
-        <button onclick="showAlert('Alert', 'Error reported successfully.<br>Thank you!')">Report</button>
+    </div>
+    <h2>Testing area here..!</h2>
+    <div class="container">
+        <h3 style="text-align: left;">MsgBox related testing</h3>
+        <h4 style="text-align: left;text-align: justify;"><u>Note:</u> <i>Hey you smart person😏😎, thanks for come this far for testing our website and we hope you will contribute to our project. Even though I called "we"/"our" I'm the only person who is currently working on this project.🙄 That's why I put my details on the home page.😒 Is that confusing😁? If you like to add your details too, again consider contributing.. "We" apappreciate it..😁</i></h4>
+        <br>
+        <button onclick="MsgBox(0,3,'Information','OKOnly')">Information:OKOnly</button>
+        <button onclick="MsgBox(1,3,'Exclamation','OKOnly')">Exclamation:OKOnly</button>
+        <button onclick="MsgBox(2,3,'Critical','OKOnly')">Critical:OKOnly</button>
+        <br>
+        <button onclick="MsgBox(0,4,'Information','CancelOnly')">Information:CancelOnly</button>
+        <button onclick="MsgBox(1,4,'Exclamation','CancelOnly')">Exclamation:CancelOnly</button>
+        <button onclick="MsgBox(2,4,'Critical','CancelOnly')">Critical:CancelOnly</button>
+        <br>
+        <button onclick="MsgBox(0,5,'Information','OkCancel')">Information:OkCancel</button>
+        <button onclick="MsgBox(1,5,'Exclamation','OkCancel')">Exclamation:OkCancel</button>
+        <button onclick="MsgBox(2,5,'Critical','OkCancel')">Critical:OkCancel</button>
+        <br>
+        <button onclick="MsgBox(0,6,'Information','YesNo')">Information:YesNo</button>
+        <button onclick="MsgBox(1,6,'Exclamation','YesNo')">Exclamation:YesNo</button>
+        <button onclick="MsgBox(2,6,'Critical','YesNo')">Critical:YesNo</button>
+        <br>
+        <button onclick="MsgBox(0,7,'Information','YesNoCancel')">Information:YesNoCancel</button>
+        <button onclick="MsgBox(1,7,'Exclamation','YesNoCancel')">Exclamation:YesNoCancel</button>
+        <button onclick="MsgBox(2,7,'Critical','YesNoCancel')">Critical:YesNoCancel</button>
+        <br>
+        <button onclick="MsgBox(0,8,'Information','RetryCancel')">Information:RetryCancel</button>
+        <button onclick="MsgBox(1,8,'Exclamation','RetryCancel')">Exclamation:RetryCancel</button>
+        <button onclick="MsgBox(2,8,'Critical','RetryCancel')">Critical:RetryCancel</button>
     </div>
     <script src="./js/404.js"></script>
     <script src="./js/common.js"></script>
