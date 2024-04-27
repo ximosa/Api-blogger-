@@ -1,7 +1,6 @@
 # Hi there 👋, I'm Your Name 😂. No it's Nadeesha..😉
 
-I'm a Frontend Developer from Sri Lanka. I'm passionate about frontend development.
-
+I'm a Frontend Developer from Sri Lanka.
 ![Profile views](https://komarev.com/ghpvc/?username=astrogroupsl-dev&label=Profile%20views&color=0e75b6&style=flat)
 
 ## 🏆 GitHub Trophies
