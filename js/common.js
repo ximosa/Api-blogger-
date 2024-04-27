@@ -1,7 +1,8 @@
 // Navigation function
 function navigate(src_path, target) {
   var main_iframe = parent.document.getElementById('main-iframe');
-  var loading_bar = document.getElementById('loading-bar');
+  var header = parent.document.getElementById('header-iframe');
+  var loading_bar = header.contentWindow.document.getElementById('loading-bar');
 
   switch (target) {
     case '_main_iframe':
@@ -105,5 +106,6 @@ function handleButtonClick(value, callback) {
   // Call the callback function with the value of the clicked button
   if (typeof callback === 'function') {
     callback(value);
+    console.log(callback(value));
   }
 }
