@@ -1,0 +1,86 @@
+.MsgBoxContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 5px #000000;
+  opacity: 0;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+.MsgBoxContainer .TitleBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+.MsgBoxContainer .Icon {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.MsgBoxContainer .TitleText {
+  flex-grow: 1;
+  margin-left: 10px;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.MsgBoxContainer .PromptText {
+  padding: 20px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.MsgBoxContainer .ButtonBox {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+}
+
+.MsgBoxContainer .btn {
+  background-color: #db3434;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.MsgBoxContainer .btn + .btn {
+  margin-left: 10px;
+}
+
+.MsgBoxContainer .btn:hover {
+  background-color: #e98585;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    translate: 0% -50%;
+  }
+  to {
+    opacity: 1;
+    translate: 0% 0%;
+  }
+}
