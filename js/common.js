@@ -1,6 +1,6 @@
 //Loading MsgBox.js
-var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
+let head = document.getElementsByTagName('head')[0];
+let script = document.createElement('script');
 script.type = 'text/javascript';
 script.src = 'https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.js';
 head.appendChild(script);
@@ -11,9 +11,9 @@ document.onselectstart = new Function("return false");
 
 // Navigation function
 function navigate(src_path, target) {
-  var main_iframe = parent.document.getElementById("main-iframe");
-  var header = parent.document.getElementById("header-iframe");
-  var loading_bar = header.contentWindow.document.getElementById("loading-bar");
+  let main_iframe = parent.document.getElementById("main-iframe");
+  let header = parent.document.getElementById("header-iframe");
+  let loading_bar = header.contentWindow.document.getElementById("loading-bar");
 
   switch (target) {
     case "_main_iframe":
