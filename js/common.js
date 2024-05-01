@@ -2,7 +2,7 @@
 var head = document.getElementsByTagName('head')[0];
 var script = document.createElement('script');
 script.type = 'text/javascript';
-script.src = '../js/MsgBox.js';
+script.src = 'https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.js';
 head.appendChild(script);
 
 // To limit user access level to the document
