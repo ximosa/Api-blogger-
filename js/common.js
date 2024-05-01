@@ -1,9 +1,7 @@
 //Loading MsgBox.js
-let head = document.getElementsByTagName('head')[0];
-let script = document.createElement('script');
-script.type = 'text/javascript';
-script.src = 'https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.js';
-head.appendChild(script);
+var script = document.createElement("script");
+script.src = "https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.js";
+document.head.appendChild(script);
 
 // To limit user access level to the document
 document.oncontextmenu = new Function("return false");
