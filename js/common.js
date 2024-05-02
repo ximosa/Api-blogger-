@@ -1,5 +1,5 @@
 //Loading MsgBox.js
-var script = document.createElement("script");
+let script = document.createElement("script");
 script.src = "https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.js";
 document.head.appendChild(script);
 
