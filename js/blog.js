@@ -1,4 +1,4 @@
-const BLOGGER_ID = '2113436558201629729';
+const BLOGGER_ID = '2756493429384988662';
 const API_KEY = 'AIzaSyBFBbH1SQkSZf1LJzammWAe2karh5mG9rQ';
 const POSTS_API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOGGER_ID}/posts?key=${API_KEY}`;
 
